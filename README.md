@@ -45,7 +45,7 @@ Input data should be prepared according to the format described in Section 7
 The application will open automatically in the RStudio Viewer or a web browser
 ## 7. **Input File Requirements**
 - A sample dataset (data.txt) is provided to allow users to quickly test the application workflow and reproduce example results (result EN_predictions.xlsx; result ENR_plot.png).
-- The input file must be a tab-delimited (.txt) file containing Ct values.
+- The user input file must be a tab-delimited (.txt) file containing Ct values.
 - Required column names:
      1-**Sample**; 2-**Ct_**Alpha_glucosidase***; 3-**Ct_*Actin*_*Alpha_glucosidase***; 4-**Ct_*COMP***; 5-**Ct_*Actin*_COMP**
 ## 8. **Output**
