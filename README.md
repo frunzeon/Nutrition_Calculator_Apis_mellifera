@@ -58,8 +58,8 @@ The application provides:
 This software is intended for academic research only.
 Commercial use or redistribution requires written permission.
 ## 10. **Authorship**
-Dr. Olga Frunze
-Laboratory CRCIV, Prof. Hyung-Wook Kwon
+Dr. Olga Frunze / 
+Laboratory CRCIV, Prof. Hyung-Wook Kwon /
 Incheon National University, Republic of Korea
 ## 11. **Citation**
 If you use this tool, please cite the associated publication (to be added).
