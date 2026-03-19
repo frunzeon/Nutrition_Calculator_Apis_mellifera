@@ -6,14 +6,14 @@ The Nutrition Calculator (*Apis mellifera*) is an academic R/Shiny application d
 Honey bees consume either beebread (protein-rich diet) or sucrose-based carbohydrate diets, which induce distinct and reproducible metabolic gene expression signatures. These signatures can be quantified using qPCR and used for predictive modeling.
 ## 3. **Diet Score Scale**
 The model uses a fixed numerical scale:
-•	Beebread + 30% sugar syrup (BS) = 1
-•	30% sugar syrup (S) = 3
+- Beebread + 30% sugar syrup (BS) = 1
+- 30% sugar syrup (S) = 3
 Predicted values closer to 1 indicate BS-like metabolism, while values closer to 3 indicate S-like metabolism.
 ## 4. **Ct Normalization Method**
 Ct values are normalized using the ΔΔCt method (Livak & Schmittgen).
-•	Housekeeping gene: *Actin*
-•	Calibrator: BS group (hard-coded in the script)
-•	Relative expression: ( 2^{-\Delta\Delta Ct} )
+- Housekeeping gene: *Actin*
+- Calibrator: BS group (hard-coded in the script)
+- Relative expression: ( 2^{-\Delta\Delta Ct} )
 ## 5. **Model Description**
 - The model is based on Elastic Net Regression (ENR) with:
 •	α = 0.5
