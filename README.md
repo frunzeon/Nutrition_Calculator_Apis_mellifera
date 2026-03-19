@@ -11,48 +11,48 @@ The model uses a fixed numerical scale:
 Predicted values closer to 1 indicate BS-like metabolism, while values closer to 3 indicate S-like metabolism.
 ## 4. **Ct Normalization Method**
 Ct values are normalized using the ΔΔCt method (Livak & Schmittgen).
-•	Housekeeping gene: Actin
+•	Housekeeping gene: *Actin*
 •	Calibrator: BS group (hard-coded in the script)
 •	Relative expression: ( 2^{-\Delta\Delta Ct} )
 ## 5. **Model Description**
-The model is based on Elastic Net Regression (ENR) with:
+- The model is based on Elastic Net Regression (ENR) with:
 •	α = 0.5
 •	λ selected via cross-validation
-Input features:
-•	Normalized COMP ortholog expression
-•	Normalized α-glucosidase expression
-Output:
+- Input features:
+•	Normalized *COMP ortholog* expression
+•	Normalized *α-glucosidase* expression
+- Output:
 A continuous diet score (~1–3) reflecting metabolic state.
 ## 6. **Usage**
 The application is executed in two sequential steps in RStudio:
-**Step 1 — Environment Setup**
-•	Run the script:
-Run1.R
-•	This script:
+- **Step 1 — Environment Setup**
+-Run the script:
+**Run 1.R**.
+  This script:
 Automatically installs all required R packages (if not already installed)
 Loads the libraries necessary for data processing, modeling, and visualization
-**Step 2 — Run Model and Launch Application**
-•	Run the script:
-Run2_launch_app.R
-•	This script:
+- **Step 2 — Run Model and Launch Application**
+-Run the script:
+**Run 2 Shiny.R**.
+  This script:
 Loads the pre-trained Elastic Net Regression model
 Performs ΔΔCt normalization of input data
 Generates diet score predictions
 Launches the Shiny application interface
-•	Notes
+- **Notes**
 Ensure that both scripts are located in the same working directory
 Input data should be prepared according to the format described in Section 7
 The application will open automatically in the RStudio Viewer or a web browser
 ## 7. **Input File Requirements**
 The input file must be a tab-delimited (.txt) file containing Ct values.
-Required columns:
-     1-Sample; 2-Ct_Alpha_glucosidase; 3-Ct_Actin_Alpha_glucosidase; 4-Ct_COMP; 5-Ct_Actin_COMP
+- Required column names:
+     1-**Sample**; 2-**Ct_**Alpha_glucosidase***; 3-**Ct_*Actin*_*Alpha_glucosidase***; 4-**Ct_*COMP***; 5-**Ct_*Actin*_COMP**
 ## 8. **Output**
 The application provides:
-•	Predicted diet scores
-•	Diet classification (BS-like or S-like)
-•	Interactive visualization
-•	Downloadable results (Excel and PNG formats)
+- Predicted diet scores
+- Diet classification (BS-like or S-like)
+- Interactive visualization
+- Downloadable results (Excel and PNG formats)
 ## 9. **Intended Use**
 This software is intended for academic research only.
 Commercial use or redistribution requires written permission.
