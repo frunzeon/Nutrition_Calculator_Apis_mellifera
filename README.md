@@ -1,7 +1,7 @@
-## **Nutrition Calculator (Apis mellifera)**
+## **Nutrition Calculator (*Apis mellifera*)**
 #**Elastic Net Regression Model with ΔΔCt Normalization**
 ## 1. **Overview**
-The Nutrition Calculator (Apis mellifera) is an academic R/Shiny application designed to estimate the diet-associated metabolic state in honey bees using qPCR gene expression data.
+The Nutrition Calculator (*Apis mellifera*) is an academic R/Shiny application designed to estimate the diet-associated metabolic state in honey bees using qPCR gene expression data.
 ## 2. **Scientific Background**
 Honey bees consume either beebread (protein-rich diet) or sucrose-based carbohydrate diets, which induce distinct and reproducible metabolic gene expression signatures. These signatures can be quantified using qPCR and used for predictive modeling.
 ## 3. **Diet Score Scale**
@@ -23,24 +23,44 @@ Input features:
 •	Normalized α-glucosidase expression
 Output:
 A continuous diet score (~1–3) reflecting metabolic state.
-## 6. **Input File Requirements**
+## 6. **Usage**
+The application is executed in two sequential steps in RStudio:
+**Step 1 — Environment Setup**
+•	Run the script:
+Run1.R
+•	This script:
+Automatically installs all required R packages (if not already installed)
+Loads the libraries necessary for data processing, modeling, and visualization
+**Step 2 — Run Model and Launch Application**
+•	Run the script:
+Run2_launch_app.R
+•	This script:
+Loads the pre-trained Elastic Net Regression model
+Performs ΔΔCt normalization of input data
+Generates diet score predictions
+Launches the Shiny application interface
+•	Notes
+Ensure that both scripts are located in the same working directory
+Input data should be prepared according to the format described in Section 6
+The application will open automatically in the RStudio Viewer or a web browser
+## 7. **Input File Requirements**
 The input file must be a tab-delimited (.txt) file containing Ct values.
 Required columns:
      1-Sample; 2-Ct_Alpha_glucosidase; 3-Ct_Actin_Alpha_glucosidase; 4-Ct_COMP; 5-Ct_Actin_COMP
-## 7. **Output**
+## 8. **Output**
 The application provides:
 •	Predicted diet scores
 •	Diet classification (BS-like or S-like)
 •	Interactive visualization
 •	Downloadable results (Excel and PNG formats)
-## 8. **Intended Use**
+## 9. **Intended Use**
 This software is intended for academic research only.
 Commercial use or redistribution requires written permission.
-## 9. **Authorship**
+## 10. **Authorship**
 Dr. Olga Frunze
 Laboratory CRCIV, Prof. Hyung-Wook Kwon
 Incheon National University, Republic of Korea
-## 10. **Citation**
+## 11. **Citation**
 If you use this tool, please cite the associated publication (to be added).
 
 
