@@ -1,0 +1,15 @@
+**Variable**	**Category/Code**	**Description**
+Sample_Group	5-day-old	Bees fed for 5 days post-emergence under cage conditions with defined diets
+Sample_Group	New bees	Newly emerged workers (<24 h old)
+Sample_Group	Nurses	Worker bees collected while feeding larvae
+Sample_Group	Foragers	Worker bees collected at hive entrance carrying pollen
+Diet_Code	BS	Beebread + 30% sugar syrup
+Diet_Code	B	Beebread
+Diet_Code	S	30% sugar syrup
+Diet_Code	Ah	Acacia honey
+Diet_Code	Sh	Sugar honey
+Diet_Code	S-Ala	30% sugar syrup + alanine
+Diet_Code	S-Arg	30% sugar syrup + arginine
+Metabolic_Score	Continuous	Predicted metabolic state (ENR model); higher = BS-like, lower = S-like
+Condition_Color	Red	BS condition
+Condition_Color	Blue	S condition
