@@ -1,4 +1,4 @@
-# Honey Bee Nutrition Calculator — Metadata
+# Nutrition Calculator (*Apis mellifera*) — Metadata
 
 ## Sample Groups
 
