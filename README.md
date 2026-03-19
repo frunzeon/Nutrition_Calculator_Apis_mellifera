@@ -41,7 +41,7 @@ Generates diet score predictions
 Launches the Shiny application interface
 •	Notes
 Ensure that both scripts are located in the same working directory
-Input data should be prepared according to the format described in Section 6
+Input data should be prepared according to the format described in Section 7
 The application will open automatically in the RStudio Viewer or a web browser
 ## 7. **Input File Requirements**
 The input file must be a tab-delimited (.txt) file containing Ct values.
