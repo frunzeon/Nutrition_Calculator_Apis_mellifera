@@ -55,7 +55,7 @@ The application provides:
 - Interactive visualization
 - Downloadable results (Excel and PNG formats)
 ## 9. **Limitations**
-- Developed using early adult Apis mellifera ligustica workers.
+- Developed using early adult *Apis mellifera ligustica* workers.
 - Based on controlled laboratory feeding experiments.
 - Food consumption was not measured directly.
 - Class labels represent molecular response states rather than direct measures of dietary intake or nutritional quality.
