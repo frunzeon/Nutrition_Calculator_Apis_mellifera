@@ -54,7 +54,7 @@ The application provides:
 - Similarity to Diet BS-like and Diet S-like molecular reference states
 - Interactive visualization
 - Downloadable results (Excel and PNG formats)
-## 9.Limitations
+## 9. **Limitations**
 - Developed using early adult Apis mellifera ligustica workers.
 - Based on controlled laboratory feeding experiments.
 - Food consumption was not measured directly.
