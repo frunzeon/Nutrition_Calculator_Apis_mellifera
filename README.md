@@ -1,7 +1,7 @@
-## **Nutrition Calculator (*Apis mellifera*)**
+## **Nutrition Calculator (*Apis mellifera*): A Biomarker-Based Dietary-Response Classifier**
 #**Elastic Net Regression Model with ΔΔCt Normalization**
 ## 1. **Overview**
-The Nutrition Calculator (*Apis mellifera*) is an academic R/Shiny application designed to estimate the diet-associated metabolic state in honey bees using qPCR gene expression data.
+The Nutrition Calculator (*Apis mellifera*): A Biomarker-Based Dietary-Response Classifier is an academic R/Shiny application designed to estimate the diet-associated metabolic state in honey bees using qPCR gene expression data.
 ## 2. **Scientific Background**
 Honey bees consume either beebread (protein-rich diet) or sucrose-based carbohydrate diets, which induce distinct and reproducible metabolic gene expression signatures. These signatures can be quantified using qPCR and used for predictive modeling.
 ## 3. **Diet Score Scale**
